@@ -8,7 +8,6 @@ curl "http://localhost:4741/events" \
   --data '{
     "event": {
       "date": "'"${DATE}"'",
-      "time": "'"${TIME}"'",
       "opponent": "'"${OPP}"'",
       "location": "'"${LOCATION}"'",
       "result": "'"${RESULT}"'",
