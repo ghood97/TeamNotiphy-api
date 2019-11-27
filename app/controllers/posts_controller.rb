@@ -5,7 +5,7 @@ class PostsController < OpenReadController
 
   # GET /posts
   def index
-    @posts = Post.order(:created_at)
+    @posts = Post.order(created_at: :desc)
 
     render json: @posts
   end
