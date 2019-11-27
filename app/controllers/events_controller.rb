@@ -5,7 +5,7 @@ class EventsController < OpenReadController
 
   # GET /events
   def index
-    @events = Event.all
+    @events = Event.order(:date)
 
     render json: @events
   end
