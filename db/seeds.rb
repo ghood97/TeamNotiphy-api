@@ -21,4 +21,4 @@ Post.create(title: 'Post 7', text: 'Post 7 body/text', user_id: 1)
 Post.create(title: 'Post 8', text: 'Post 8 body/text', user_id: 1)
 Post.create(title: 'Post 9', text: 'Post 8 body/text', user_id: 1)
 Post.create(title: 'Post 10', text: 'Post 10 body/text', user_id: 1)
-puts "10 posts created"
+puts '10 posts created'
