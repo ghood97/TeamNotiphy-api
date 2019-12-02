@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_27_162556) do
+ActiveRecord::Schema.define(version: 2019_12_02_173051) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,11 +29,12 @@ ActiveRecord::Schema.define(version: 2019_11_27_162556) do
     t.string "opponent"
     t.string "location"
     t.string "result"
-    t.string "score"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.datetime "date"
+    t.integer "own_score"
+    t.integer "opp_score"
     t.index ["user_id"], name: "index_events_on_user_id"
   end
 

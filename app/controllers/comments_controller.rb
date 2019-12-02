@@ -5,7 +5,11 @@ class CommentsController < ProtectedController
 
   # GET /comments
   def index
-    @comments = Comment.order(created_at: :desc)
+    @comments = if params[:post_id]
+                  Comment.where(post_id: params[:post_id])
+                else
+                  Comment.order(created_at: :desc)
+                end
 
     render json: @comments
   end

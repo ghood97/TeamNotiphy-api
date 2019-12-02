@@ -54,7 +54,8 @@ class EventsController < OpenReadController
                                   :opponent,
                                   :location,
                                   :result,
-                                  :score,
+                                  :own_score,
+                                  :opp_score,
                                   :user_id)
   end
 end
