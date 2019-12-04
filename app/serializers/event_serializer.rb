@@ -4,6 +4,7 @@ class EventSerializer < ActiveModel::Serializer
   attributes :id,
              :day,
              :date,
+             :date_formatted,
              :time,
              :opponent,
              :location,
@@ -16,11 +17,15 @@ class EventSerializer < ActiveModel::Serializer
     object.date.strftime('%A')
   end
 
-  def date
+  def date_formatted
     object.date.strftime('%m/%d/%y')
   end
 
   def time
     object.date.strftime('%I:%M%p')
+  end
+
+  def date
+    object.date.strftime('%Y-%m-%dT%H:%M')
   end
 end
