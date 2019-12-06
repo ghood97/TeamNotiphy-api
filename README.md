@@ -58,4 +58,4 @@ DELETE | /events/:id | destroy
 <hr />
 
 ## ERD:
-![ERD](./public/ERD.png)
+![ERD](./ERD.png)
