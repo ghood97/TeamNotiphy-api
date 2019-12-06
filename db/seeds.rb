@@ -10,6 +10,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+Event.destroy_all
 Post.destroy_all
 Post.create(title: 'Post 1', text: 'Post 1 body/text', user_id: 1)
 Post.create(title: 'Post 2', text: 'Post 2 body/text', user_id: 1)
